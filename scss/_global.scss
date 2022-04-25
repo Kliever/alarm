@@ -1,0 +1,362 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  overflow: visible;
+  min-width: 320px;
+  @extend %r-400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $text;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: visible;
+  padding-right: 0;
+  &._active {
+    overflow-y: hidden;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  color: $link;
+  font-size: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+}
+
+.container {
+  max-width: 1480px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.large-container {
+  max-width: 1920px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+//modal add basket
+
+.modal-basketadd {
+  position: fixed;
+  max-width: 400px;
+  top: 60px;
+  right: 0;
+  background: #fff;
+  padding: 10px 20px;
+  background: $lightBlack;
+  border-radius: 20px;
+  margin: 10px;
+  box-shadow: 0px 0px 10px 3px rgba($lightBlack, 0.5);
+  z-index: 350;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s;
+  &._active {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.3s, opacity 0.3s;
+  }
+}
+.modal-basketadd__title {
+  @extend %m-600;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.modal-basketadd__title-name {
+}
+.modal-basketadd__message {
+  color: $whiteBlue;
+  text-align: center;
+  @extend %m-500;
+  font-size: 20px;
+}
+
+.btn {
+  border: none;
+  background: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: background 0.3s, box-shadow 0.3s;
+  @extend %r-700;
+  &:hover {
+    background: $darkBlue;
+    box-shadow: 0px 0px 8px 4px rgba($darkBlue, 0.5);
+  }
+}
+
+// breadcrumbs==============================================
+.breadcrumbs {
+  padding: 25px 10px;
+}
+.breadcrumbs__inner {
+}
+.breadcrumbs__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.breadcrumbs__item {
+  font-size: 14px;
+  line-height: 18px;
+  @extend %r-500;
+  position: relative;
+  padding-right: 40px;
+  &::after {
+    content: ">";
+    position: absolute;
+    right: 16px;
+    top: 0;
+  }
+  &:last-child {
+    @extend %r-700;
+  }
+  &:last-child::after {
+    display: none;
+  }
+}
+.breadcrumbs__link {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.breadcrumbs__this-page {
+}
+
+//category name--------------------------------------------
+.category-name {
+  @extend %m-600;
+  font-size: 48px;
+  line-height: 50px;
+  color: #fff;
+  position: relative;
+  margin: 0 50px;
+  // display: inline;
+  display: inline-block;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    height: calc(100% + 10px);
+    background: $lightBlack;
+    z-index: -1;
+    left: -50px;
+    right: -50px;
+    border-radius: 20px;
+  }
+}
+
+//global imput select================================
+.select {
+  display: flex;
+}
+.select__name {
+  margin-right: 5px;
+  @extend %r-500;
+}
+.select__inner {
+}
+.select__box {
+  position: relative;
+
+}
+.select__btn {
+  border: none;
+  background: none;
+  position: relative;
+  display: block;
+  text-align: left;
+  padding: 0 20px 0 5px;
+  position: relative;
+  line-height: 18px;
+  border-radius: 3px;
+  border: 1px solid rgba($lightBlack, 0);
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 5px;
+    height: 100%;
+    width: 10px;
+    background: url("../images/icons/angle-down.svg") center / 10px no-repeat;
+    pointer-events: none;
+  }
+  &:focus,
+  &._active {
+    outline: none;
+    border: 1px solid rgba($lightBlack, 0.3);
+  }
+  &.select__btn--showby {
+    width: 45px;
+  }
+  &.select__btn--sort {
+    width: 200px;
+  }
+}
+.select__list {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  background: $lightGray;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+  box-shadow: 0px 0px 8px 3px rgba($darkBlue, 1);
+  z-index: 10;
+  &._visible {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.select__list-item {
+  cursor: pointer;
+  padding: 5px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.js-select__input {
+  display: none;
+}
+
+// global double range ===================================
+
+.double-slider {
+  position: relative;
+  margin-bottom: 30px;
+}
+.double-slider__counter-min,
+.double-slider__counter-max {
+  position: absolute;
+  width: 60px;
+  height: 20px;
+  bottom: -30px;
+  border: 1px solid $lightGray-dark;
+  border-radius: 5px;
+  outline: none;
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  &:focus {
+    border: 1px solid $lightGray-dark;
+    box-shadow: 0px 0px 5px 2px rgba($blue, 0.8);
+  }
+  &:active {
+    border: 1px solid $lightGray-dark;
+    box-shadow: 0px 0px 5px 2px rgba($blue, 0.8);
+  }
+}
+.double-slider__counter-min {
+  left: 0;
+}
+.double-slider__counter-max {
+  right: 0;
+}
+
+.noUi-horizontal {
+  height: 4px;
+  .noUi-handle {
+    width: 17px;
+    height: 17px;
+    right: -8px;
+    top: -8px;
+    box-shadow: none;
+    border-radius: 50%;
+    background: $blue;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    &:hover {
+      box-shadow: 0px 0px 5px 2px rgba($blue, 0.8);
+    }
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
+}
+.noUi-connect {
+  background: $blue;
+}
+.noUi-target {
+  border: 1px solid $lightGray-dark;
+}
+
+
+// gallery-popup on product page
+
+.gallery-popup{
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background:rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s, visibility .3s;
+  display: flex;
+  justify-content: center;
+  &._active{
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.gallery-popup__inner{
+  background: #fff;
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.gallery-popup__img{
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}

@@ -1,0 +1,2016 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Категории</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="top-banner">
+    <div class="top-banner__wrapper">
+      <img class="top-banner__img" src="images/banners/top-banner-img.png" alt="" class="top-banner__img">
+      <p class="top-banner__text">Получи бесплатную доставку</p>
+      <div class="top-banner__btn">
+        <a class="top-banner__link" href="#">Подробнее</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-wrapper">
+          <div class="header__top-control-bar">
+            <div class="logo header__top-logo">
+              <a class="logo__link" href="/">
+                <img class="logo__img" src="images/logo.png" alt="">
+              </a>
+            </div>
+            <form class="search-form header__top-search">
+              <input type="text" class="search-form__input" placeholder="Поиск товара">
+              <button class="search-form__btn"></button>
+            </form>
+            <div class="place header__place">
+              <div class="place__title">
+                <div class="place__title-text">Ваш регион:</div>
+              </div>
+              <div class="place__name">
+                <span class="place__name-text">Киев</span>
+                <div class="place__block-wrapper">
+                  <div class="place__block">
+                    <div class="place__block-input">
+                      <input type="text" class="place__input" placeholder="Ваш город">
+                      <button class="place__button"></button>
+                    </div>
+                    <ul class="place__list">
+                      <li class="place__list-item">
+                        <button class="place__list-btn">Киев</button>
+                      </li>
+                      <li class="place__list-item">
+                        <button class="place__list-btn">Винница</button>
+                      </li>
+                      <li class="place__list-item">
+                        <button class="place__list-btn">Днепр</button>
+                      </li>
+                      <li class="place__list-item">
+                        <button class="place__list-btn">Донецк</button>
+                      </li>
+                      <li class="place__list-item">
+                        <button class="place__list-btn">Житомир</button>
+                      </li>
+                      <li class="place__list-item">
+                        <button class="place__list-btn">Запорожье</button>
+                      </li>
+                      <li class="place__list-item">
+                        <button class="place__list-btn">Ивано-Франковск</button>
+                      </li>
+                      <li class="place__list-item">
+                        <button class="place__list-btn">Кировоград</button>
+                      </li>
+                      <li class="place__list-item">
+                        <button class="place__list-btn">Луганск</button>
+                      </li>
+                      <li class="place__list-item">
+                        <button class="place__list-btn">Львов</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="user header__user">
+            <li class="user__accaunt"><a class="user__accaunt-link" href="#">
+                <span class="user__counter-text">Мой аккаунт</span></a></li>
+            <li class="message user__counter"><a class="user__counter-link" href="#">
+                <span class="user__counter-text">Сообщения</span>
+                <span class="user__counter-num">1</span>
+              </a></li>
+            <li class="chosen user__counter"><a class="user__counter-link" href="#">
+                <span class="user__counter-text">Избранное</span>
+                <span class="user__counter-num">3</span>
+              </a></li>
+            <li class="basket user__counter"><a class="user__counter-link" href="#">
+                <span class="user__counter-text">Корзина</span>
+                <span class="user__counter-num">5</span>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <div class="header__navigation">
+          <nav class="menu header__menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <form class="search-form menu__list-form">
+                  <input type="text" class="search-form__input" placeholder="Поиск товара">
+                  <button class="search-form__btn"></button>
+                </form>
+              </li>
+              <li class="menu__list-item"><a class="menu__list-link catalog-btn">Каталог товаров</a>
+                <div class="drop-menu">
+                  <ul class="drop-menu__chapter">
+                    <li class="drop-menu__chapter-item">
+                      <div class="drop-menu__chapter-btn">
+                        <span class="drop-menu__chapter-icon">
+                          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bell"
+                            class="svg-inline--fa fa-bell fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <path class="drop-menu__chapter-icon-fill"
+                              d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z">
+                            </path>
+                          </svg>
+                        </span>
+                        Сигнализация
+                      </div>
+                      <div class="drop-menu__subsection-inner signaling">
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Популярные сигнализации
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Ajax
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Сигнализация для дома
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Сигнализация для гаража
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              GSM сигнализации
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Проводные GSM сигнализации
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Беспроводные GSM сигнализации
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                GSM сигнализации без 220В
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                GSM охрана территории
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                GSM централи, модули
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Сигнализации шумовые (с сиреной)
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Модульные охранные комплекты
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Простые сигнализации на батарейках
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Датчики оповещения о посетителе
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Сигнализация для улицы
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Пожарная сигнализация
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Пожарная безопасность
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Адресные системы пожарной сигнализации
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Безадресные системы пожарной сигнализации
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Сигнализации и аксессуары для велосипедов
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Велофары
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Велокомпьютеры
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Велосигнализации
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Велозамки
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Велокрепления
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Наклейки охранные и предупреждающие
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Наклейки "Объект под охраной"
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Наклейки "Ведется видеонаблюдение"
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Наклейки "Злая собака"
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Информационные знаки
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Предупреждающие знаки
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Эвакуационные знаки ("Выход")
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Знаки пожарной безопасности
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Запрещающие знаки
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Наклейки для оповещателей
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Оборудование для сигнализации (инсталляторам)
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                GSM централи, дозвонщики
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Датчики для сигнализаций
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Сирены для сигнализаций
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Радиопульты для сигнализаций
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Клавиатуры и считыватели эл. ключей
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Кнопки выхода и тревожные кнопки
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Блоки питания и батареи
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Специализированные модули и комплектующие
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Аксессуары к сигнализациям
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Все для ремонта и производства
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Расходные материалы для монтажа
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Система защиты от протечек воды
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Пультовые приборы
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Автономные охранные сигнализации
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Кабель и аксессуары для монтажа
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Сигнальный кабель CCA (биметалл)
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Сигнальный кабель CU (медь)
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Уличный кабель для сигнализации
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Электрический кабель
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Огнестойкий кабель
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Корпуса и монтажные коробки
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Кабельный крепеж
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Дверные гибкие переходы
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Коробки распаячные
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Акустический кабель
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Безопасность автомобиля
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Сирены к автосигнализации
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Браслеты и ремни противоскольжения
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Автомобильные видеорегистраторы
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Системы парковки
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                GSM-GPS сигнализации для автомобиля
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Сирены, озвучивание и оповещение
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Системы речевого оповещения
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Сирены и оповещатели
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Наклейки, знаки и таблички
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Проэктирование
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Проектирование пожарной сигнализации
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Проектирование охранной сигнализации
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Проектирование систем видеонаблюдения
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="drop-menu__chapter-item">
+                      <div class="drop-menu__chapter-btn">
+                        <span class="drop-menu__chapter-icon">
+                          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="video"
+                            class="svg-inline--fa fa-video fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 576 512">
+                            <path class="drop-menu__chapter-icon-fill"
+                              d="M336.2 64H47.8C21.4 64 0 85.4 0 111.8v288.4C0 426.6 21.4 448 47.8 448h288.4c26.4 0 47.8-21.4 47.8-47.8V111.8c0-26.4-21.4-47.8-47.8-47.8zm189.4 37.7L416 177.3v157.4l109.6 75.5c21.2 14.6 50.4-.3 50.4-25.8V127.5c0-25.4-29.1-40.4-50.4-25.8z">
+                            </path>
+                          </svg>
+                        </span>
+                        Видеонаблюдение
+                      </div>
+                      <div class="drop-menu__subsection-inner videomonitoring">
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Простое видеонаблюдение на 1-2 камеры
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Камера с картой памяти
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Wi-Fi камеры
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Камеры для подключения к ТВ
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Камеры для подключения к ПК
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Камеры с SIM-картой
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Блоки питания
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Карты памяти
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Комплекты видеонаблюдения на 2 и более камеры
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                HD комплекты видеонаблюдения
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                IP комплекты видеонаблюдения
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Wi-Fi комплекты видеонаблюдения
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Видеонаблюдение для помещений
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Муляжи камер
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Муляжи наружных камер
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Купольные муляжи
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Цилиндрические муляжи
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Поворотные муляжи с дат. прохождения
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Камеры видеонаблюдения
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Hikvision
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Dahua
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Ezviz
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Partizan
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                TVT
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                LightVision
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                PoliceCam
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                InterVision
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Видеорегистраторы
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Сетевые IP
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Wi-Fi видеорегистраторы
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                DVR, HVR видеорегистраторы
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Видеонаблюдение для транспорта
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Авторегистраторы
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Дорожно-парковочное наблюдение
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Охранно-транспортное наблюдение
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Система видеонаблюдения для автобуса
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Видеонаблюдение для спорта, туризма, охоты
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Экшн-камеры
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Фотоловушки
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Камеры на батарейках
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Комплектующие и аксессуары видеонаблюдения
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Видеорегистраторы
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Видеокамеры
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Средства хранения (карты памяти, жесткие диски и пр.)
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Устройства питания
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Сетевое оборудование
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Мониторы, средства просмотра
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Устройства освещения
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Видеоконвертеры, разветвители и удлинители
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Монтажные коробки и антивандальные ящики
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Кронштейны и держатели камер
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Источники бесперебойного питания
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Инструмент для монтажа видеонаблюдения
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Расходные материалы для монтажа
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Кабель и аксессуары для видеонаблюдения
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Кабель электрический и сигнальный
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Передача видео по оптоволокну
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Передача видео по коаксилу
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Передача видео по витой паре
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Кабедбный крепеж
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Интерфейсные кабели HDMI, VGA, RCA, USB
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Видеоконвертеры, разветвители и удлинители
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Акустический кабель
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Разъемы и коммутационное оборудование
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Популярные технические решения
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Комплекты видеонаблюдения с записью звука
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Комплекты наружного видеонаблюдения
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Облачное хранение
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="drop-menu__chapter-item">
+                      <div class="drop-menu__chapter-btn">
+                        <span class="drop-menu__chapter-icon lock">
+                          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="unlock"
+                            class="svg-inline--fa fa-unlock fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <path class="drop-menu__chapter-icon-fill"
+                              d="M400 256H152V152.9c0-39.6 31.7-72.5 71.3-72.9 40-.4 72.7 32.1 72.7 72v16c0 13.3 10.7 24 24 24h32c13.3 0 24-10.7 24-24v-16C376 68 307.5-.3 223.5 0 139.5.3 72 69.5 72 153.5V256H48c-26.5 0-48 21.5-48 48v160c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
+                            </path>
+                          </svg>
+                        </span>
+                        Системы контроля доступа
+                      </div>
+                      <div class="drop-menu__subsection-inner acs">
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Готовые решения
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                СКД для частного дома (квартиры)
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                СКУД для жилого дома (подъезда)
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                СКД для малого офиса (бутика)
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                СКУД для среднего офиса
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                СКУД для учебного заведения (школы)
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                СКУД для автостоянки (гаража)
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                СКУД для предприятия
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                СКУД для гостинницы (отеля, общежития)
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Терминалы
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Автономный учет рабочего времени
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Терминалы доступа
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Электрозамки
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Электромеханические замки
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Электромагнитные замки
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Электроригельные замки
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Электромеханические защелки
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Автономные замки
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Дистанционное управление
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Брелоки, пульты ДУ
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Радиоконтроллеры
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                GSM реле
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Наборы радиоуправления
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Аксессуары к СКУД
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Электронные ключи и карты
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Дверные доводчики
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Гибкий переход
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Кнопки выхода
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Дверные упоры
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Модули
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Кронштейны
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Блоки питания
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Кабель
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Блоки бесперебойного питания
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Аккумуляторные батареи
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="drop-menu__chapter-item">
+                      <div class="drop-menu__chapter-btn">
+                        <span class="drop-menu__chapter-icon">
+                          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home"
+                            class="svg-inline--fa fa-home fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 576 512">
+                            <path class="drop-menu__chapter-icon-fill"
+                              d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z">
+                            </path>
+                          </svg>
+                        </span>
+                        Умный дом
+                      </div>
+                      <div class="drop-menu__subsection-inner smarthouse">
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Умные розетки
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Радиоуправляемые розетки
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Wi-Fi розетки
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                GSM-розетки
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Комплектующие
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Broadlink
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Замки-невидимки
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Гаджеты
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Комплекты управления
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Система защиты от протечек воды
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="drop-menu__chapter-item">
+                      <div class="drop-menu__chapter-btn">
+                        <span class="drop-menu__chapter-icon light">
+                          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="lightbulb"
+                            class="svg-inline--fa fa-lightbulb fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 352 512">
+                            <path class="drop-menu__chapter-icon-fill"
+                              d="M96.06 454.35c.01 6.29 1.87 12.45 5.36 17.69l17.09 25.69a31.99 31.99 0 0 0 26.64 14.28h61.71a31.99 31.99 0 0 0 26.64-14.28l17.09-25.69a31.989 31.989 0 0 0 5.36-17.69l.04-38.35H96.01l.05 38.35zM0 176c0 44.37 16.45 84.85 43.56 115.78 16.52 18.85 42.36 58.23 52.21 91.45.04.26.07.52.11.78h160.24c.04-.26.07-.51.11-.78 9.85-33.22 35.69-72.6 52.21-91.45C335.55 260.85 352 220.37 352 176 352 78.61 272.91-.3 175.45 0 73.44.31 0 82.97 0 176zm176-80c-44.11 0-80 35.89-80 80 0 8.84-7.16 16-16 16s-16-7.16-16-16c0-61.76 50.24-112 112-112 8.84 0 16 7.16 16 16s-7.16 16-16 16z">
+                            </path>
+                          </svg>
+                        </span>
+                        Освещение
+                      </div>
+                      <div class="drop-menu__subsection-inner lighting">
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Прожекторы, светильники и датчики
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Светодиодные LED-прожекторы
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Прожекторы с датчиком движения
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Светильники с датчиком движения
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Датчики движения для включения света
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="drop-menu__chapter-item">
+                      <div class="drop-menu__chapter-btn">
+                        <span class="drop-menu__chapter-icon">
+                          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="keyboard"
+                            class="svg-inline--fa fa-keyboard fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 576 512">
+                            <path class="drop-menu__chapter-icon-fill"
+                              d="M528 448H48c-26.51 0-48-21.49-48-48V112c0-26.51 21.49-48 48-48h480c26.51 0 48 21.49 48 48v288c0 26.51-21.49 48-48 48zM128 180v-40c0-6.627-5.373-12-12-12H76c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12zm96 0v-40c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12zm96 0v-40c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12zm96 0v-40c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12zm96 0v-40c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12zm-336 96v-40c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12zm96 0v-40c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12zm96 0v-40c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12zm96 0v-40c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12zm-336 96v-40c0-6.627-5.373-12-12-12H76c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12zm288 0v-40c0-6.627-5.373-12-12-12H172c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h232c6.627 0 12-5.373 12-12zm96 0v-40c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12z">
+                            </path>
+                          </svg>
+                        </span>
+                        Домофоны
+                      </div>
+                      <div class="drop-menu__subsection-inner intercoms">
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Комплекты домофонов
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Аналоговые домофоны
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                IP домофоны
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                IP Wi-Fi домофоны
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Аналоговые домофоны с IP/Wi-Fi
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Домофоны с памятью
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Видеодомофоны
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Аналоговые видеодомофоны
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                IP домофоны
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Wi-Fi домофоны
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Аналоговые домофоны с IP/Wi-Fi
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Вызывные панели
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Аналоговые вызывные панели
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                IP вызывные панели
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Wi-Fi вызывные панели
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Аналоговые панели с IP/Wi-Fi модулем
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Аксессуары
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Дверные доводчики
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Электрозамки
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Считыватели
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Электронные ключи и карты
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Кнопки выхода
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Гибкий переход ПМ
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Дверные упоры
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Дополнительные камеры к домофонам
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Карты памяти для домофонов
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Блоки питания для СКУД
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Модули для домофонов
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Видео-дверные звонки
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Только с сообщением на смартфон
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                С управлением замком
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                С локальным звонком
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Аудиодомофоны и переговорные устройства
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Аудиодомофоны
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Переговорные устройства
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="drop-menu__chapter-item">
+                      <div class="drop-menu__chapter-btn">
+                        <span class="drop-menu__chapter-icon">
+                          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="spray-can"
+                            class="svg-inline--fa fa-spray-can fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <path class="drop-menu__chapter-icon-fill"
+                              d="M224 32c0-17.67-14.33-32-32-32h-64c-17.67 0-32 14.33-32 32v96h128V32zm256 96c-17.67 0-32 14.33-32 32s14.33 32 32 32 32-14.33 32-32-14.33-32-32-32zm-256 32H96c-53.02 0-96 42.98-96 96v224c0 17.67 14.33 32 32 32h256c17.67 0 32-14.33 32-32V256c0-53.02-42.98-96-96-96zm-64 256c-44.18 0-80-35.82-80-80s35.82-80 80-80 80 35.82 80 80-35.82 80-80 80zM480 96c17.67 0 32-14.33 32-32s-14.33-32-32-32-32 14.33-32 32 14.33 32 32 32zm-96 32c-17.67 0-32 14.33-32 32s14.33 32 32 32 32-14.33 32-32-14.33-32-32-32zm-96-96c-17.67 0-32 14.33-32 32s14.33 32 32 32 32-14.33 32-32-14.33-32-32-32zm96 0c-17.67 0-32 14.33-32 32s14.33 32 32 32 32-14.33 32-32-14.33-32-32-32zm96 192c-17.67 0-32 14.33-32 32s14.33 32 32 32 32-14.33 32-32-14.33-32-32-32z">
+                            </path>
+                          </svg>
+                        </span>
+                        Самооборона
+                      </div>
+                      <div class="drop-menu__subsection-inner selfdefense">
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Газовые баллончики
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Газовые баллончики Терен
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Газовые баллончики Кобра
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Газовые баллончики Блиц
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Перцовые баллончики
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Газовые баллончики Шип
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Чехлы для газовых баллончиков
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="drop-menu__subsection-block">
+                          <h4 class="drop-menu__subsection-name">
+                            <a class="drop-menu__subsection-name-link" href="#">
+                              Прочее
+                            </a>
+                          </h4>
+                          <ul class="drop-menu__subsection-list">
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Отпугиватели собак
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Фонарики
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                Красители и невидимая маркировка
+                              </a>
+                            </li>
+                            <li class="drop-menu__subsection-item">
+                              <a class="drop-menu__subsection-link" href="#">
+                                GSM-ловушки и фотоловушки
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu__list-item"><a class="menu__list-link" href="#">Услуги</a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="#">Бонусы</a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="#">Техподдержка</a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="#">Оплата</a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="#">Доставка</a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="#">О нас</a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="#">Контакты</a></li>
+              <li class="mobile-items">
+                <button class="menu__list-link header__call-btn pop-up-button"
+                  data-modal="callback">Заказать звонок</button>
+                </li>
+              <li class="menu__list-item menu__list-item-user">
+                <a class="menu__list-link" href="#">Мой аккаунт
+                </a>
+              </li>
+              <li class="menu__list-item menu__list-item-user">
+                <a class="menu__list-link" href="#">Сообщения
+                  <span class="user__counter-num">1</span>
+                </a>
+              </li>
+              <li class="menu__list-item menu__list-item-user">
+                <a class="menu__list-link" href="#">Избранное
+                  <span class="user__counter-num">3</span>
+                </a>
+              </li>
+              <li class="menu__list-item menu__list-item-user">
+                <a class="menu__list-link" href="#">Корзина
+                  <span class="user__counter-num">5</span>
+                </a>
+              </li>
+
+            </ul>
+          </nav>
+          <div class="header__call">
+            <button class="header__call-btn pop-up-button" data-modal="callback">Заказать звонок</button>
+            <button class="header__call-btn-mobile">
+              <div class="header__call-btn-mobile-item topline"></div>
+              <div class="header__call-btn-mobile-item midline"></div>
+              <div class="header__call-btn-mobile-item botline"></div>
+            </button>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="cat-main">
+
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="breadcrumbs__inner">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a href="" class="breadcrumbs__link">
+                Главная (каталог)
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <span class="breadcrumbs__this-page">
+                Услуги
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <section class="cat-categories">
+      <div class="container">
+        <h1 class="category-name cat-categories__name">
+          Услуги
+        </h1>
+        <ul class="cat-categories__list">
+          <li class="cat-categories__item">
+            <div class="cat-categories__item-inner">
+              <p class="cat-categories__item-name">
+                Решения под ключ
+              </p>
+              <button class="btn cat-categories__item-btn">
+                Подробнее
+              </button>
+            </div>
+          </li>
+          <li class="cat-categories__item">
+            <div class="cat-categories__item-inner">
+              <p class="cat-categories__item-name">
+                Проектирование охранных систем
+              </p>
+              <button class="btn cat-categories__item-btn">
+                Подробнее
+              </button>
+            </div>
+          </li>
+          <li class="cat-categories__item">
+            <div class="cat-categories__item-inner">
+              <p class="cat-categories__item-name">
+                Монтаж систем безопасности
+              </p>
+              <button class="btn cat-categories__item-btn">
+                Подробнее
+              </button>
+            </div>
+          </li>
+          <li class="cat-categories__item">
+            <div class="cat-categories__item-inner">
+              <p class="cat-categories__item-name">
+                Обслуживание систем видеонаблюдения
+              </p>
+              <button class="btn cat-categories__item-btn">
+                Подробнее
+              </button>
+            </div>
+          </li>
+          <li class="cat-categories__item">
+            <div class="cat-categories__item-inner">
+              <p class="cat-categories__item-name">
+                Вызов сервисного инженера
+              </p>
+              <button class="btn cat-categories__item-btn">
+                Подробнее
+              </button>
+            </div>
+          </li>
+          <li class="cat-categories__item">
+            <div class="cat-categories__item-inner">
+              <p class="cat-categories__item-name">
+                Комплексная охрана квартир, домов, офисов
+              </p>
+              <button class="btn cat-categories__item-btn">
+                Подробнее
+              </button>
+            </div>
+          </li>
+          <li class="cat-categories__item">
+            <div class="cat-categories__item-inner">
+              <p class="cat-categories__item-name">
+                Центр обучения системам безопасности
+              </p>
+              <button class="btn cat-categories__item-btn">
+                Подробнее
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="maps">
+      <div class="container">
+        <div class="maps__inner">
+          <div class="maps__info-block info-block">
+            <div class="info-block__inner">
+              <h4 class="info-block__title">
+                ГАРАНТИЯ ПРИБЫТИЯ НА ВЫЗОВ
+                ЗА 3-5 МИНУТ
+              </h4>
+              <p class="info-block__text">
+                Группы быстрого реагирования охранного агентства "Охрана и Защита" круглосуточно дежурят во всех районах
+                города
+                Харькова, это дает нам возможность гарантировать прибытие охраны по сигналу тревоги на объект в течении
+                считанных минут.
+              </p>
+              <button class="btn info-block__btn">Детальнее</button>
+            </div>
+          </div>
+          <div class="maps__map-block map-block">
+            <div class="map" id="map">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <button class="footer__go-top js-go-top"></button>
+      <div class="footer__inner">
+        <div class="footer__row footer__first-row">
+          <a class="footer__logo" href="/">
+            <img class="footer__logo-img" src="images/logo.png" alt="">
+          </a>
+          <p class="footer__adress">02140 Киев, пр. Центральный, 45</p>
+          <p class="footer__adress">02140 Киев, пр. Центральный, 45</p>
+          <div class="footer__social">
+            <a class="footer__social-link youtube-btn">
+              <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube"
+                class="svg-inline--fa fa-youtube fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512">
+                <path class="footer__social-path"
+                  d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
+                </path>
+              </svg>
+            </a>
+            <a class="footer__social-link facebook-btn">
+              <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook"
+                class="svg-inline--fa fa-facebook fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512">
+                <path class="footer__social-path"
+                  d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+                </path>
+              </svg>
+            </a>
+            <a class="footer__social-link insta-btn">
+              <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram-square"
+                class="svg-inline--fa fa-instagram-square fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512">
+                <path class="footer__social-path"
+                  d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z">
+                </path>
+              </svg>
+            </a>
+          </div>
+          <p class="footer__copy">© 2000 - 2021 Гипермаркет по БЕЗОПАСНОСТИ</p>
+          <p class="footer__copy">Интернет-магазин untar.ua</p>
+          <a class="footer__use" href="#">Условия использования сайта</a>
+        </div>
+        <div class="footer__row footer__menu">
+          <p class="footer__menu-title">Каталог товаров</p>
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">
+                Сигнализация
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">
+                Видеонаблюдение
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">
+                Системы контроля доступа
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">
+                Умный дом
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">
+                Освещение
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">
+                Домофоны
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">
+                Самооборона
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__row footer__menu">
+          <span class="footer__menu-title">Покупателям</span>
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">
+                Оплата
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">
+                Доставка
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">
+                Гарантия
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">
+                Возврат товара
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">
+                Вопросы и ответы
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">
+                Акции
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">
+                Блог
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">
+                Бонусная программа
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">
+                Подарочные сертификаты
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__row footer__menu">
+          <span class="footer__menu-title">Компания</span>
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">
+                О нас
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">
+                Услуги
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">
+                Сотрудничество с нами
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">
+                Техподдержка
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">
+                Сервисные центры
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">
+                Производители
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">
+                Скоро в продаже
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">
+                Вакансии
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__row footer__last-row">
+          <a class="footer__main-phone" href="tel:0440606060">044 060 60 60</a>
+          <a class="footer__phone" href="tel:0952330000">(095) 233 00 00</a>
+          <a class="footer__phone" href="tel:0952330000">(095) 233 00 00</a>
+          <a class="footer__phone" href="tel:0952330000">(095) 233 00 00</a>
+          <a class="footer__phone" href="tel:0952330000">(095) 233 00 00</a>
+          <a class="footer__call-link" href="#">Заказать обратный звонок</a>
+          <div class="footer__cards">
+            <span class="footer__cards-title">Принимаем к оплате:</span>
+            <div class="footer__cards-inner">
+              <a class="footer__card" href="#">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="cc-visa"
+                  class="svg-inline--fa fa-cc-visa fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 576 512">
+                  <path class="card-path"
+                    d="M470.1 231.3s7.6 37.2 9.3 45H446c3.3-8.9 16-43.5 16-43.5-.2.3 3.3-9.1 5.3-14.9l2.8 13.4zM576 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48zM152.5 331.2L215.7 176h-42.5l-39.3 106-4.3-21.5-14-71.4c-2.3-9.9-9.4-12.7-18.2-13.1H32.7l-.7 3.1c15.8 4 29.9 9.8 42.2 17.1l35.8 135h42.5zm94.4.2L272.1 176h-40.2l-25.1 155.4h40.1zm139.9-50.8c.2-17.7-10.6-31.2-33.7-42.3-14.1-7.1-22.7-11.9-22.7-19.2.2-6.6 7.3-13.4 23.1-13.4 13.1-.3 22.7 2.8 29.9 5.9l3.6 1.7 5.5-33.6c-7.9-3.1-20.5-6.6-36-6.6-39.7 0-67.6 21.2-67.8 51.4-.3 22.3 20 34.7 35.2 42.2 15.5 7.6 20.8 12.6 20.8 19.3-.2 10.4-12.6 15.2-24.1 15.2-16 0-24.6-2.5-37.7-8.3l-5.3-2.5-5.6 34.9c9.4 4.3 26.8 8.1 44.8 8.3 42.2.1 69.7-20.8 70-53zM528 331.4L495.6 176h-31.1c-9.6 0-16.9 2.8-21 12.9l-59.7 142.5H426s6.9-19.2 8.4-23.3H486c1.2 5.5 4.8 23.3 4.8 23.3H528z">
+                  </path>
+                </svg>
+              </a>
+              <a class="footer__card" href="#">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="cc-mastercard"
+                  class="svg-inline--fa fa-cc-mastercard fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 576 512">
+                  <path class="card-path"
+                    d="M482.9 410.3c0 6.8-4.6 11.7-11.2 11.7-6.8 0-11.2-5.2-11.2-11.7 0-6.5 4.4-11.7 11.2-11.7 6.6 0 11.2 5.2 11.2 11.7zm-310.8-11.7c-7.1 0-11.2 5.2-11.2 11.7 0 6.5 4.1 11.7 11.2 11.7 6.5 0 10.9-4.9 10.9-11.7-.1-6.5-4.4-11.7-10.9-11.7zm117.5-.3c-5.4 0-8.7 3.5-9.5 8.7h19.1c-.9-5.7-4.4-8.7-9.6-8.7zm107.8.3c-6.8 0-10.9 5.2-10.9 11.7 0 6.5 4.1 11.7 10.9 11.7 6.8 0 11.2-4.9 11.2-11.7 0-6.5-4.4-11.7-11.2-11.7zm105.9 26.1c0 .3.3.5.3 1.1 0 .3-.3.5-.3 1.1-.3.3-.3.5-.5.8-.3.3-.5.5-1.1.5-.3.3-.5.3-1.1.3-.3 0-.5 0-1.1-.3-.3 0-.5-.3-.8-.5-.3-.3-.5-.5-.5-.8-.3-.5-.3-.8-.3-1.1 0-.5 0-.8.3-1.1 0-.5.3-.8.5-1.1.3-.3.5-.3.8-.5.5-.3.8-.3 1.1-.3.5 0 .8 0 1.1.3.5.3.8.3 1.1.5s.2.6.5 1.1zm-2.2 1.4c.5 0 .5-.3.8-.3.3-.3.3-.5.3-.8 0-.3 0-.5-.3-.8-.3 0-.5-.3-1.1-.3h-1.6v3.5h.8V426h.3l1.1 1.4h.8l-1.1-1.3zM576 81v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V81c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48zM64 220.6c0 76.5 62.1 138.5 138.5 138.5 27.2 0 53.9-8.2 76.5-23.1-72.9-59.3-72.4-171.2 0-230.5-22.6-15-49.3-23.1-76.5-23.1-76.4-.1-138.5 62-138.5 138.2zm224 108.8c70.5-55 70.2-162.2 0-217.5-70.2 55.3-70.5 162.6 0 217.5zm-142.3 76.3c0-8.7-5.7-14.4-14.7-14.7-4.6 0-9.5 1.4-12.8 6.5-2.4-4.1-6.5-6.5-12.2-6.5-3.8 0-7.6 1.4-10.6 5.4V392h-8.2v36.7h8.2c0-18.9-2.5-30.2 9-30.2 10.2 0 8.2 10.2 8.2 30.2h7.9c0-18.3-2.5-30.2 9-30.2 10.2 0 8.2 10 8.2 30.2h8.2v-23zm44.9-13.7h-7.9v4.4c-2.7-3.3-6.5-5.4-11.7-5.4-10.3 0-18.2 8.2-18.2 19.3 0 11.2 7.9 19.3 18.2 19.3 5.2 0 9-1.9 11.7-5.4v4.6h7.9V392zm40.5 25.6c0-15-22.9-8.2-22.9-15.2 0-5.7 11.9-4.8 18.5-1.1l3.3-6.5c-9.4-6.1-30.2-6-30.2 8.2 0 14.3 22.9 8.3 22.9 15 0 6.3-13.5 5.8-20.7.8l-3.5 6.3c11.2 7.6 32.6 6 32.6-7.5zm35.4 9.3l-2.2-6.8c-3.8 2.1-12.2 4.4-12.2-4.1v-16.6h13.1V392h-13.1v-11.2h-8.2V392h-7.6v7.3h7.6V416c0 17.6 17.3 14.4 22.6 10.9zm13.3-13.4h27.5c0-16.2-7.4-22.6-17.4-22.6-10.6 0-18.2 7.9-18.2 19.3 0 20.5 22.6 23.9 33.8 14.2l-3.8-6c-7.8 6.4-19.6 5.8-21.9-4.9zm59.1-21.5c-4.6-2-11.6-1.8-15.2 4.4V392h-8.2v36.7h8.2V408c0-11.6 9.5-10.1 12.8-8.4l2.4-7.6zm10.6 18.3c0-11.4 11.6-15.1 20.7-8.4l3.8-6.5c-11.6-9.1-32.7-4.1-32.7 15 0 19.8 22.4 23.8 32.7 15l-3.8-6.5c-9.2 6.5-20.7 2.6-20.7-8.6zm66.7-18.3H408v4.4c-8.3-11-29.9-4.8-29.9 13.9 0 19.2 22.4 24.7 29.9 13.9v4.6h8.2V392zm33.7 0c-2.4-1.2-11-2.9-15.2 4.4V392h-7.9v36.7h7.9V408c0-11 9-10.3 12.8-8.4l2.4-7.6zm40.3-14.9h-7.9v19.3c-8.2-10.9-29.9-5.1-29.9 13.9 0 19.4 22.5 24.6 29.9 13.9v4.6h7.9v-51.7zm7.6-75.1v4.6h.8V302h1.9v-.8h-4.6v.8h1.9zm6.6 123.8c0-.5 0-1.1-.3-1.6-.3-.3-.5-.8-.8-1.1-.3-.3-.8-.5-1.1-.8-.5 0-1.1-.3-1.6-.3-.3 0-.8.3-1.4.3-.5.3-.8.5-1.1.8-.5.3-.8.8-.8 1.1-.3.5-.3 1.1-.3 1.6 0 .3 0 .8.3 1.4 0 .3.3.8.8 1.1.3.3.5.5 1.1.8.5.3 1.1.3 1.4.3.5 0 1.1 0 1.6-.3.3-.3.8-.5 1.1-.8.3-.3.5-.8.8-1.1.3-.6.3-1.1.3-1.4zm3.2-124.7h-1.4l-1.6 3.5-1.6-3.5h-1.4v5.4h.8v-4.1l1.6 3.5h1.1l1.4-3.5v4.1h1.1v-5.4zm4.4-80.5c0-76.2-62.1-138.3-138.5-138.3-27.2 0-53.9 8.2-76.5 23.1 72.1 59.3 73.2 171.5 0 230.5 22.6 15 49.5 23.1 76.5 23.1 76.4.1 138.5-61.9 138.5-138.4z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <div class="modal-callback pop-up-window" data-modal="callback">
+    <div class="modal-callback__wrapper">
+      <div class="modal-callback__block">
+        <div class="modal-callback__top">
+          <h5 class="modal-callback__title">Заказать звонок</h5>
+          <button class="modal-callback__close pop-up-close" data-modal="callback"></button>
+        </div>
+        <div class="modal-callback__main">
+          <form class="modal-callback__form">
+            <input class="modal-callback__input" type="text" placeholder="Ваше имя">
+            <input class="modal-callback__input phone" type="text" value="+38(___)___-____">
+            <button class="modal-callback__btn">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal-basketadd">
+    <div class="modal-basketadd__title"></div>
+    <div class="modal-basketadd__message">Добавлен в корзину</div>
+  </div>
+
+
+
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+    async></script>
+  <script src="js/libs.js"></script>
+  <script src="js/main.js"></script>
